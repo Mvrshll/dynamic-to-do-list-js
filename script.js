@@ -46,6 +46,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
     // Load tasks from Local Storage on page load
     loadTasks();
+
+    // Call addTask on initial load 
+    addTask(); // This line ensures an empty task is added on load
   
     addButton.addEventListener("click", addTask);
   

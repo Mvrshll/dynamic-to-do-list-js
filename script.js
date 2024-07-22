@@ -13,19 +13,19 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Function to add a new task
-  function addTask(taskText, save = true) {
+  function addTask() {
     // Get the task text and trim any whitespace
-    const text = taskText.trim();
+    const taskText = taskInput.value.trim();
 
     // Check if the task text is empty
-    if (text === '') {
+    if (taskText === '') {
       alert('Please enter a task!');
       return;
     }
 
     // Create a new list item (li) element
     const newTask = document.createElement('li');
-    newTask.textContent = text;
+    newTask.textContent = taskText;
 
     // Create a remove button
     const removeBtn = document.createElement('button');
